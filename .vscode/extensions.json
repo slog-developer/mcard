@@ -1,7 +1,19 @@
 {
-  "recommendations": [
-    "arcanis.vscode-zipfs",
-    "dbaeumer.vscode-eslint",
-    "esbenp.prettier-vscode"
-  ]
+  "search.exclude": {
+    "**/.yarn": true,
+    "**/.pnp.*": true
+  },
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true,
+    "source.fixAll.eslint": true
+  },
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "eslint.experimental.useFlatConfig": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
 }
