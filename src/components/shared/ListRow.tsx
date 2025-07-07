@@ -10,9 +10,9 @@ interface ListRowProps {
   onClick?: () => void
 }
 
-function ListRow({ left, contents, right, withArrow }: ListRowProps) {
+function ListRow({ left, contents, right, withArrow, onClick }: ListRowProps) {
   return (
-    <Flex as="li" css={listRowContainerStyles} align="center">
+    <Flex as="li" css={listRowContainerStyles} align="center" onClick={onClick}>
       <Flex css={listRowLeftStyles}>{left}</Flex>
       <Flex css={listRowContentsStyles}>{contents}</Flex>
       <Flex>{right}</Flex>
